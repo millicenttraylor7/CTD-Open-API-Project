@@ -1,0 +1,92 @@
+body {
+    background-color:darkkhaki;
+}
+h1 {
+  text-align: center;
+  color: #6F4E37; /* Coffee brown color */
+  margin-bottom: 10px;
+}
+
+body > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Menu section styling */
+#Menu {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#Menu h2 {
+  text-align: center;
+  color: #6F4E37;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Remove default list styling */
+#menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Create a grid layout for cards */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual coffee card styling */
+.coffee-card {
+  background-color: white;
+  border-radius: 10px;
+  /* Add shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Smooth transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect - card lifts up */
+.coffee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container styling */
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+/* Image styling - ensures images fill container properly */
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers area without distortion */
+  display: block;
+}
+
+/* Card content area (text section) */
+.card-content {
+  padding: 20px;
+}
+
+/* Coffee title styling */
+.card-title {
+  margin: 0 0 10px 0;
+  color: #6F4E37; /* Coffee brown */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Coffee description styling */
+.card-description {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
