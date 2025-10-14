@@ -1,7 +1,3 @@
-
-// Log message to console
-console.log("Hello");
-
 // Run code after the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
   const menuList = document.getElementById("menuList");
@@ -63,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
   .catch(error => {
       console.error("Error fetching weather data:", error);
-  });
+  });  
   
 
 
