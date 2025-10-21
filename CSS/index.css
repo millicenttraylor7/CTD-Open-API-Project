@@ -1,10 +1,45 @@
 body {
-    background-color:darkkhaki;
+  font-family: Arial, sans-serif;
+  background-image: url("/coffee-beans.jpg"); /* <-- your image file */
+  background-size: cover;       /* make it fill the screen */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat; /* prevent tiling */
+  margin: 0;
+  padding: 20px;
+}
+    
+
+
+a {
+        text-decoration: none;
+}
+nav {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+nav a {
+  color: dark grey;  
+  text-decoration: none;
+  
+  /* Button-like styling */
+  padding: 10px 20px;
+  border: 2px solid #6F4E37
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background-color: #6F4E37;
+  color: white;
 }
 h1 {
   text-align: center;
   color: #6F4E37; /* Coffee brown color */
   margin-bottom: 10px;
+  font-size: 3rem; 
+  font-weight: bold;
 }
 
 body > p {
@@ -12,6 +47,7 @@ body > p {
   color: #666;
   margin-bottom: 30px;
 }
+
 
 /* Menu section styling */
 #Menu {
@@ -89,4 +125,65 @@ body > p {
   color: #666;
   line-height: 1.6;
   font-size: 0.95em;
+}
+
+#Weather h2 {
+  text-align: center;
+  color: #6F4E37;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+.weather-container {
+  display: flex;
+  justify-content: center;
+}
+
+.weather-card {
+  background: rgb(189, 183, 107);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px lightslategray;
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.weather-card:hover {
+  transform: translateY(-4px);
+}
+
+.weather-card h3 {
+  margin-top: 0;
+  color: #0d263a;
+}
+
+.weather-icon {
+  font-size: 48px;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+}
+
+.content-section section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: darkkhaki;
+  border: 3px solid #6F4E37; /* Coffee brown border */
+  border-radius: 10px;
+}
+
+ ul {
+     list-style: none;
+   }
+
+
+/* media query for mobile */
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+  }
 }
